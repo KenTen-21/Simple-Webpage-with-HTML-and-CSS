@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Slide in animation function */
+        @keyframes slideIn {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        /* Slide right animation function */
+        @keyframes slideRight {
+            0% {
+                transform: translateX(-100%);
+            }
+            50% {
+                transform: translateX(10px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+        /* Slide left animation function */
+        @keyframes slideLeft {
+            0% {
+                transform: translateX(100%);
+            }
+            50% {
+                transform: translateX(-10px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+        /* Slide up animation function */
+        @keyframes slideUp {
+            0% {
+                transform: translateY(100%);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        /* Body */
+        body {
+            font-family: Arial, Sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white !important;
+        }
+        /* Header */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 5px;
+            text-align: center;
+            border: white solid;
+            border-radius: 10px;
+            box-shadow: inset 0 0 10px white;
+            animation: slideIn 2s;
+        }
+        /* header 1 */
+        .header h1 {
+            font-size: 24px;
+            font-style: italic;
+            text-decoration: underline !important;
+        }
+        /* Content */
+        .content {
+            background-color: green;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            border: white solid;
+            border-radius: 10px;
+            box-shadow: inset 0 0 20px white;
+            animation: slideRight 2s;
+        }
+        /* Content p */
+        .content p {
+            font-size: 16px;
+        }
+        /* Section 1 */
+        .section1 {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border: white solid;
+            border-radius: 10px;
+            box-shadow: inset 0 0 10px white;
+            animation: slideLeft 2s;
+        }
+        /* Section 1 h2 */
+        .section1 h2 {
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        /* Section 1 p */
+        .section2 {
+            background-color: green;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            border: white solid;
+            border-radius: 10px;
+            box-shadow: inset 0 0 20px white;
+            animation: slideRight 2s;
+        }
+        /* Section 2 h2 */
+        .section2 h2 {
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        /* Section 2 p */
+        .section2 p {
+            font-size: 16px;
+        }
+        /* Section 3 */
+        .section3 {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border: white solid;
+            border-radius: 10px;
+            box-shadow: inset 0 0 10px white;
+            animation: slideLeft 3s;
+        }
+        /* Section 3 h2 */
+        .section3 h2 {
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        /* Section 3 p */
+        .section3 p {
+            font-size: 16px;
+        }
+        /* Section 4 */
+        .section4 {
+            background-color: green;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            border: white solid;
+            border-radius: 10px;
+            box-shadow: inset 0 0 20px white;
+            animation: slideRight 3s;
+        }
+        /* Section 4 h2 */
+        .section4 h2 {
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        /* Section 4 p */
+        .section4 p {
+            font-size: 16px;
+        }
+        /* Section 5 */
+        .section5 {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border: white solid;
+            border-radius: 10px;
+            box-shadow: inset 0 0 10px white;
+            animation: slideLeft 3s;
+        }
+        /* Section 5 h2 */
+        .section5 h2 {
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        /* Section 5 p */
+        .section5 p {
+            font-size: 16px;
+        }
+        /* Section 6 */
+        .section6 {
+            background-color: green;
+            color: black;
+            padding: 10px;
+            text-align: center;
+            border: white solid;
+            border-radius: 10px;
+            box-shadow: inset 0 0 20px white;
+            animation: slideRight 2s;
+        }
+        /* Section 6 h3 */
+        .section6 h3 {
+            font-size: 20px;
+            text-decoration: underline;
+        }
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border: white solid;
+            border-radius: 10px;
+            box-shadow: inset 0 0 10px white;
+            animation: slideUp 2s;
+        }
+        /* Footer p */
+        footer p {
+            font-size: 16px;
+        }
+        /* Footer a */
+        footer a {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 5px;
+            padding: 5px;
+            transition: background-color 0.3s ease;
+        }
+        /* Footer a:hover */
+        .footer a:hover {
+            background-color: #555;
+        }
+        /* Footer i */
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Welcome message -->
+    <div class="header">
+        <h1>Welcome to My Simple Webpage</h1>
+    </div>
+    <!---->
+    <div class="content">
+        <p> This is a simple webpage designed with HTML and CSS.</p>
+    </div>
+    <!-- Section 1: About HTML -->
+    <div class="section1">
+        <h2>Section 1: What is HyperText Markup Language (HTML)</h2>
+        <p>HyperText Markup Language or HTML for short is a markup language which a document which could be displayed in any web browser.</p>
+    </div>
+    <!-- Section 2: What can be done in HTML -->
+    <div class="section2">
+        <h2>Section 2: What can you do in HTML file?</h2>
+        <p>In HTML file you can add unlimited line of codes to display everything on the webpage. You could also put CSS in the HTML as an option but recommended to make a css file along with the HTML file so you do not get confused what is HTML and CSS.</p>
+    </div>
+    <!-- Section 3: About CSS -->
+    <div class="section3">
+        <h2>Section 3: What is Cascading Style Sheets (CSS)?</h2>
+        <p>Cascading Style Sheets or CSS for short is a style sheet language used for describing the presentation of a document written in HTML.</p>
+    </div>
+    <!-- Section 4: What can CSS do? -->
+    <div class="section4">
+        <h2>Section 4: What can CSS do?</h2>
+        <p>CSS can also create animation like sliding in from the left, right, down, up etc. can change the color of the text, the font size, the font style, the background color, the padding, the margin, the border, the border-radius, the box-shadow etc. There are a lot of animation that could make the webpage look interesting</p>
+    </div>
+    <!-- Section 5: How is this webpage done? -->
+    <div class="section5">
+        <h2>Section 5: How is this webpage done?</h2>
+        <p>This webpage is done by using HTML, and CSS. The HTML is used to create the structure of the webpage, and the CSS is used to style the webpage and animation as you could see that each of the section slides in from the left or the right except for the top which slides down and the footer which slides up.</p>
+    </div>
+    <!-- Section 6: Thank you for visiting my webpage -->
+    <div class="section6">
+        <h3>Thank you for visiting my webpage</h3>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>Designed by: Kenneth Leung</p>
+        <a href="https://www.linkedin.com/in/kenneth-leung-a259b9293/"><i class="fab fa-linkedin"></i>LinkedIn</a>
+        <a href="https://www.facebook.com/profile.php?id=100015520154105"><i class="fab fa-facebook"></i>Facebook</a>
+        <a href="https://www.instagram.com/kenten21/"><i class="fab fa-instagram"></i>Instagram</a>
+        <a href="https://www.youtube.com/channel/UCd1UcHNLU-hkz-0JmJBQOBQ"><i class="fab fa-youtube"></i>YouTube 1</a>
+        <a href="https://www.youtube.com/channel/UCqK07dJBh_XpKDkULZpdEAQ"><i class="fab fa-youtube"></i>YouTube 2</a>
+        <a href="https://www.youtube.com/channel/UCPnanOcCH92zQ8ZlIEqSAbw"><i class="fab fa-youtube"></i>YouTube 3</a>
+        <a href="https://github.com/KenTen-21"><i class="fab fa-github"></i>GitHub</a>
+    </footer>
+</bod>
+</html>
